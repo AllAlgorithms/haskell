@@ -1,0 +1,9 @@
+# Built test executable
+GliderTest
+
+# Build file extensions
+*.hi
+*.o
+
+# Build directory
+./build
