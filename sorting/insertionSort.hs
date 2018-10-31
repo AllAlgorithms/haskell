@@ -1,13 +1,10 @@
 insert :: Ord a => a -> [a] -> [a]
-insert elem [] = [elem]
-insert elem (x:[]) = min elem x:max elem x:[]
-insert elem (x:y:xs)
-  | elem > x && elem < y = x:elem:y:xs
-  | elem < x && elem < y = elem:x:y:xs 
-  | otherwise            = x:insert elem (y:xs)
-
+insert e [] = [e]
+insert e xs@(x:xs') =
+  case compare e x of
+    GT -> x : insert e xs'
+    _  -> e : xs
 
 insertionSort :: Ord a => [a] -> [a]
-insertionSort [] = []
-insertionSort (x:xs) =
-  foldl (\acc a -> insert a acc) (insert x []) xs
+insertionSort =
+  foldr insert []
