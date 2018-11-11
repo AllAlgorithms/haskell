@@ -9,11 +9,11 @@ build() {
     -odir "$build_dir" \
     -hidir "$build_dir" \
     -o "$build_dir"/GliderTest \
-    test/GliderTest.hs \
-    lib/*.hs
+    GliderTest.hs \
+    *.hs
 }
 
 run_test() { "$build_dir"/GliderTest; }
 
-build && run_test
+build && test
 
