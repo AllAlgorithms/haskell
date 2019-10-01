@@ -57,6 +57,10 @@
 
 - [Conway's Game of Life](cellular-automaton/ConwaysGameOfLife.hs)
 
+## Ciphers
+
+- [Caesar](ciphers/Caesar.hs)
+
 ## Data Structures
 
 - [Queue](data-structures/Queue.hs)
