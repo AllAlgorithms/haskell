@@ -83,6 +83,7 @@
 - [Bubble Sort](sorting/BubbleSort.hs)
 - [Merge Sort](sorting/MergeSort.hs)
 - [Quick Sort](sorting/QuickSort.hs)
+- [Selection Sort](sorting/selectionSort.hs)
 
 ## Strings
 
