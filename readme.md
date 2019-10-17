@@ -53,6 +53,10 @@
 - [Others](#others)
 
 
+## Bit Manipulation
+
+- [Hamming distance](bit-manipulation/hammingDistance.hs)
+
 ## Cellular Automaton
 
 - [Conway's Game of Life](cellular-automaton/ConwaysGameOfLife.hs)
