@@ -21,10 +21,6 @@ search x (Node a left right)
 	| x < a  = search x left
 	| otherwise = search x right
 
-height :: (Ord a) => Tree a -> Int
-height Empty = 0
-height (Node _ left right) = 1 + max (height left) (height right)
-
 toString :: (Show a) => Tree a -> String
 toString Empty = ""
 toString (Node a left right)
