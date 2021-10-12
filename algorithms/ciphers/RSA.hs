@@ -42,7 +42,7 @@ genKeyPair p q e = let phi = lcm (p-1) (q-1)
 isPrime :: Integer -> Bool
 isPrime n = all (==False) [ n `mod` x == 0 | x <- [2..n-1] ]
 
--- |Extended Eucl
+-- |Extended Euclidean algorithm.
 exgcd :: Integer -> Integer -> (Integer, Integer, Integer)
 exgcd a 0 = (a, 1, 0)
 exgcd a b = (g, y, x - (a `div` b) * y)
